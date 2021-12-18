@@ -70,7 +70,7 @@ fn (mut r Redis) read_response() ?[]string {
 	res := line[1..line.len - 2]
 	match line[0] {
 		`-` { // error
-			return error(err)
+			return error(res)
 		}
 		`+`, `:` { // single line or int
 			return [res]
