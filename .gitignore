@@ -1,0 +1,10 @@
+# Binaries for programs and plugins
+main
+smallredis
+*.exe
+*.exe~
+*.so
+*.dylib
+*.dll
+vls.log
+.DS_Store
